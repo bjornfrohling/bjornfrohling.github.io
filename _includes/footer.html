@@ -1,0 +1,35 @@
+<footer class="site-footer">
+
+
+
+
+    <div class="footer">
+<br>
+        <h3 class="footer-heading">Kontakt:</h3>
+        {% if site.email %}
+        email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        {% endif %}
+        <h4 class="contact-list">
+
+
+          </h4>
+</br>
+        <div class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </div>
+
+
+    </div>
+
+
+</footer>
